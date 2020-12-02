@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="final.js"> type = "module"</script>
+    <title>Your City's Weather</title>
+</head>
+<body>
+    <div id="wrapper">
+    <main>
+        <h1 tabindex="0">Weather App</h1>
+        <section id="search">
+            <h2 tabindex="-1">Search Cities</h2>
+            <div id="button-div">
+                <label for="searchbox" name="searchbox"></label>
+                 <input type="text" id="searchbox" name="searchbox" size="40" autocomplete="off" placeholder="Search City Name" tabindex="0"/>
+                <button id="search-button" type="submit" aria-label="Search for a city's weather" tabindex="0">Search</button>
+            </div>
+            <button id="button-add-default">Add current city as default</button>
+        </section> 
+        <section id="display-current-weather">
+            <div>
+                <h2>Current Temp:</h2>
+                <h2>High Temp:</h2>
+                <h2>Low Temp:</h2>
+                <h2>Wind Speed:</h2>
+                <h2>Humidity:</h2>
+            </div>
+            <h2 id="fetched-heading-location-label" tabindex="0"> </h2>
+            <h3 id="dateSpace" tabindex="0"></h3>
+            <h3 id="timeSpace" tabindex="0"></h3>
+            <h2 id="display-date-label" class="label-font"></h2>
+            <div id="large-central-weather-icon"></div>
+            <div id="weatherstats">
+                <div id="weather-col-1" tabindex="0"></div>
+                <div id="weather-col-2" tabindex="0"></div>
+            </div>
+        </section>
+    </main>
+    </div>
+</body>
+</html>
